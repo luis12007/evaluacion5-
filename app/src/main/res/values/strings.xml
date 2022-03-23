@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ActivityMUH</string>
+    <string name="text_title_iteration">Iteración</string>
+    <string name="text_subtitle_action">Acción</string>
+    <string name="text_description">El algoritmo de ordenamiento de burbujas es uno de los algoritmos de ordenamiento más sencillos aunque no es le mas eficiente. Su simplicidad lo convierte en un algoritmo ideal para practicar programación.</string>
+    <string name="text_subtitle_compare">Comparar</string>
+    <string name="exchange">Intercambiar</string>
+    <string name="next">Siguiente</string>
+    <string name="back">Anterior</string>
+</resources>

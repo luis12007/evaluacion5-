@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">app_name</string>
+    <string name="text_title_iteration">Iteration</string>
+    <string name="text_subtitle_action">Action</string>
+    <string name="text_description">The bubble sort is one of the simplest sort algorithm, although it is not the most efficent. Its simplicity makes it an ideal algorithm to practice pragramming.</string>
+    <string name="text_subtitle_compare">Compare</string>
+    <string name="exchange">Exchange</string>
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+</resources>
