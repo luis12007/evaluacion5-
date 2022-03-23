@@ -12,9 +12,7 @@
         android:layout_height="@dimen/medium_gap"
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="@dimen/small_gap"
         android:src="@drawable/cinco_normal"
-        app:layout_constraintEnd_toStartOf="@+id/imageViewTwo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -22,10 +20,12 @@
         android:id="@+id/imageViewTwo"
         android:layout_width="@dimen/medium_gap"
         android:layout_height="@dimen/medium_gap"
-        android:layout_marginTop="32dp"
+        android:layout_marginEnd="240dp"
         android:src="@drawable/dos_normal"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="97dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewFive"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewFive"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/imageViewFour"
@@ -53,15 +53,15 @@
         android:layout_width="@dimen/medium_gap"
         android:layout_height="@dimen/medium_gap"
         android:layout_marginStart="@dimen/small_gap"
-        android:layout_marginTop="32dp"
         android:layout_marginEnd="30dp"
         android:src="@drawable/tres_normal"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewOne"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageViewOne"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/imageViewOne" />
 
     <Button
-        android:id="@+id/BtnNext"
+        android:id="@+id/Action_BtnNext"
         android:layout_width="@dimen/big_gap"
         android:layout_height="wrap_content"
         android:text="@string/next"
@@ -73,7 +73,7 @@
         app:layout_constraintVertical_bias="0.22000003" />
 
     <Button
-        android:id="@+id/BtnBlack"
+        android:id="@+id/Action_BtnBlack"
         android:layout_width="@dimen/big_gap"
         android:layout_height="48dp"
         android:text="@string/back"
@@ -88,14 +88,12 @@
         android:id="@+id/textView"
         android:layout_width="95dp"
         android:layout_height="29dp"
-        android:layout_marginTop="@dimen/small_gap"
+        android:layout_marginBottom="468dp"
         android:text="@string/text_title_iteration"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/BtnNext"
-        app:layout_constraintVertical_bias="0.0"
-        android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView2"
