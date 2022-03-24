@@ -8,124 +8,121 @@
 
     <ImageView
         android:id="@+id/imageViewFive"
-        android:layout_width="@dimen/medium_gap"
-        android:layout_height="@dimen/medium_gap"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="@dimen/small_gap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/twenty_four"
+        android:layout_marginTop="@dimen/thirty_two"
         android:src="@drawable/cinco_normal"
-        app:layout_constraintEnd_toStartOf="@+id/imageViewTwo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageViewTwo"
-        android:layout_width="@dimen/medium_gap"
-        android:layout_height="@dimen/medium_gap"
-        android:layout_marginTop="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/twenty_gap"
         android:src="@drawable/dos_normal"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="97dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewFive"
+        app:layout_constraintStart_toEndOf="@+id/imageViewFive"
+        app:layout_constraintTop_toTopOf="@+id/imageViewFive" />
 
     <ImageView
         android:id="@+id/imageViewFour"
-        android:layout_width="@dimen/medium_gap"
-        android:layout_height="@dimen/medium_gap"
-        android:layout_marginTop="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/twenty_gap"
         android:src="@drawable/cuatro_normal"
-        android:layout_marginStart="@dimen/small_gap"
-        app:layout_constraintStart_toEndOf="@+id/imageViewTwo"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewTwo"
+        app:layout_constraintStart_toEndOf="@+id/imageViewTwo" />
 
     <ImageView
         android:id="@+id/imageViewOne"
-        android:layout_width="@dimen/medium_gap"
-        android:layout_height="@dimen/medium_gap"
-        android:layout_marginStart="@dimen/small_gap"
-        android:layout_marginTop="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
 
+        android:layout_marginStart="@dimen/twenty_four"
         android:src="@drawable/uno_normal"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewFour"
         app:layout_constraintStart_toEndOf="@+id/imageViewFour"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/imageViewFour" />
 
     <ImageView
         android:id="@+id/imageViewThree"
-        android:layout_width="@dimen/medium_gap"
-        android:layout_height="@dimen/medium_gap"
-        android:layout_marginStart="@dimen/small_gap"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="30dp"
-        android:src="@drawable/tres_normal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageViewOne"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/BtnNext"
-        android:layout_width="@dimen/big_gap"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/next"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.8"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.22000003" />
+        android:layout_marginStart="@dimen/twenty_four"
+        android:src="@drawable/tres_normal"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewOne"
+        app:layout_constraintStart_toEndOf="@+id/imageViewOne"
+        app:layout_constraintTop_toTopOf="@+id/imageViewOne" />
 
     <Button
-        android:id="@+id/BtnBlack"
-        android:layout_width="@dimen/big_gap"
-        android:layout_height="48dp"
+        android:id="@+id/Action_BtnBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/small_gap"
+        android:layout_marginTop="@dimen/twenty_four"
+        android:background="@color/transparent"
         android:text="@string/back"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.2"
+        android:textColor="@color/blue"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.22000003" />
+        app:layout_constraintTop_toBottomOf="@+id/imageViewFive" />
 
+    <Button
+        android:id="@+id/Action_BtnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/small_gap"
+        android:background="@color/transparent"
+        android:text="@string/next"
+        android:textColor="@color/blue"
+        app:layout_constraintBottom_toBottomOf="@+id/Action_BtnBlack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Action_BtnBlack" />
     <TextView
         android:id="@+id/textView"
-        android:layout_width="95dp"
-        android:layout_height="29dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/small_gap"
         android:text="@string/text_title_iteration"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/BtnNext"
-        app:layout_constraintVertical_bias="0.0"
-        android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        app:layout_constraintEnd_toStartOf="@+id/Action_BtnNext"
+        app:layout_constraintStart_toEndOf="@+id/Action_BtnBlack"
+        app:layout_constraintTop_toBottomOf="@+id/Action_BtnNext" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="@dimen/medium_gap"
-        android:layout_height="@dimen/big_gap"
+        android:id="@+id/textViewCounting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/small_gap"
-        android:text="1"
+
         android:textAppearance="@style/TextAppearance.MaterialComponents.Headline1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
+    <!--- android:text="0", esta linea es la que se utiliza para mostrar el numero en pantalla-->
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="74dp"
-        android:layout_height="29dp"
+        android:id="@+id/textViewAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_gap"
         android:text="@string/text_subtitle_action"
         android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-        app:layout_constraintEnd_toEndOf="@+id/textView2"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintEnd_toEndOf="@+id/textViewCounting"
+        app:layout_constraintStart_toStartOf="@+id/textViewCounting"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCounting" />
 
     <TextView
         android:id="@+id/Description"
-        android:layout_width="360dp"
-        android:layout_height="@dimen/big_gap"
-        android:layout_marginTop="@dimen/medium_gap"
+        android:layout_width="@dimen/width_text"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/twenty_four"
+        android:layout_marginTop="@dimen/twenty_four"
+        android:layout_marginEnd="@dimen/small_gap"
         android:text="@string/text_description"
-        app:layout_constraintEnd_toEndOf="@+id/textView3"
-        app:layout_constraintStart_toStartOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintEnd_toEndOf="@+id/textViewAction"
+        app:layout_constraintStart_toStartOf="@+id/textViewAction"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAction" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
