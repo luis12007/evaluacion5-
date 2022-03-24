@@ -34,12 +34,10 @@
         android:src="@drawable/cuatro_normal"
         app:layout_constraintBottom_toBottomOf="@+id/imageViewTwo"
         app:layout_constraintStart_toEndOf="@+id/imageViewTwo" />
-
     <ImageView
         android:id="@+id/imageViewOne"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         android:layout_marginStart="@dimen/twenty_four"
         android:src="@drawable/uno_normal"
         app:layout_constraintBottom_toBottomOf="@+id/imageViewFour"
@@ -89,6 +87,7 @@
         app:layout_constraintEnd_toStartOf="@+id/Action_BtnNext"
         app:layout_constraintStart_toEndOf="@+id/Action_BtnBlack"
         app:layout_constraintTop_toBottomOf="@+id/Action_BtnNext" />
+
 
     <TextView
         android:id="@+id/textViewCounting"
