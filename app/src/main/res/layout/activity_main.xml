@@ -14,7 +14,8 @@
         android:layout_marginTop="@dimen/thirty_two"
         android:src="@drawable/cinco_normal"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
     <ImageView
         android:id="@+id/imageViewTwo"
@@ -33,7 +34,8 @@
         android:layout_marginStart="@dimen/twenty_gap"
         android:src="@drawable/cuatro_normal"
         app:layout_constraintBottom_toBottomOf="@+id/imageViewTwo"
-        app:layout_constraintStart_toEndOf="@+id/imageViewTwo" />
+        app:layout_constraintStart_toEndOf="@+id/imageViewTwo"
+        app:layout_constraintTop_toTopOf="@+id/imageViewTwo" />
     <ImageView
         android:id="@+id/imageViewOne"
         android:layout_width="wrap_content"
@@ -94,7 +96,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/small_gap"
-
         android:textAppearance="@style/TextAppearance.MaterialComponents.Headline1"
         app:layout_constraintEnd_toEndOf="@+id/textView"
         app:layout_constraintStart_toStartOf="@+id/textView"
@@ -114,11 +115,11 @@
 
     <TextView
         android:id="@+id/Description"
-        android:layout_width="@dimen/width_text"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/twenty_four"
+        android:layout_marginStart="@dimen/thirty_two"
         android:layout_marginTop="@dimen/twenty_four"
-        android:layout_marginEnd="@dimen/small_gap"
+        android:layout_marginEnd="@dimen/thirty_two"
         android:text="@string/text_description"
         app:layout_constraintEnd_toEndOf="@+id/textViewAction"
         app:layout_constraintStart_toStartOf="@+id/textViewAction"
