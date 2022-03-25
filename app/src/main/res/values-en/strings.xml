@@ -12,4 +12,9 @@
     <string name="one">1</string>
     <string name="two">2</string>
     <string name="three">3</string>
+    <string name="image1">imgPlace1</string>
+    <string name="image2">imgPlace2</string>
+    <string name="image3">imgPlace3</string>
+    <string name="image4">imgPlace4</string>
+    <string name="image5">imgPlace5</string>
 </resources>

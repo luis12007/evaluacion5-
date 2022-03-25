@@ -12,16 +12,17 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/twenty_four"
         android:layout_marginTop="@dimen/thirty_two"
+        android:contentDescription="@string/image1"
         android:src="@drawable/cinco_normal"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageViewTwo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/twenty_gap"
+        android:contentDescription="@string/image2"
         android:src="@drawable/dos_normal"
         app:layout_constraintBottom_toBottomOf="@+id/imageViewFive"
         app:layout_constraintStart_toEndOf="@+id/imageViewFive"
@@ -32,15 +33,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/twenty_gap"
+        android:contentDescription="@string/image3"
         android:src="@drawable/cuatro_normal"
         app:layout_constraintBottom_toBottomOf="@+id/imageViewTwo"
         app:layout_constraintStart_toEndOf="@+id/imageViewTwo"
         app:layout_constraintTop_toTopOf="@+id/imageViewTwo" />
+
     <ImageView
         android:id="@+id/imageViewOne"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/twenty_four"
+        android:contentDescription="@string/image4"
         android:src="@drawable/uno_normal"
         app:layout_constraintBottom_toBottomOf="@+id/imageViewFour"
         app:layout_constraintStart_toEndOf="@+id/imageViewFour"
@@ -51,6 +55,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/twenty_four"
+        android:contentDescription="@string/image5"
         android:src="@drawable/tres_normal"
         app:layout_constraintBottom_toBottomOf="@+id/imageViewOne"
         app:layout_constraintStart_toEndOf="@+id/imageViewOne"
@@ -79,6 +84,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/Action_BtnBlack"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/Action_BtnBlack" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -93,6 +99,7 @@
 
     <TextView
         android:id="@+id/textViewCounting"
+        tools:text="0"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/small_gap"
@@ -100,8 +107,6 @@
         app:layout_constraintEnd_toEndOf="@+id/textView"
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
-    <!--- android:text="0", esta linea es la que se utiliza para mostrar el numero en pantalla-->
-
     <TextView
         android:id="@+id/textViewAction"
         android:layout_width="wrap_content"

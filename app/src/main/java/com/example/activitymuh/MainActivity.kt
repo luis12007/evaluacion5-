@@ -13,8 +13,8 @@ class MainActivity : AppCompatActivity() {
     //data
     private var textNumber = 0
     private var textClicks = 0
-    private lateinit var textChange: TextView
     //text
+    private lateinit var textChange: TextView
     private lateinit var textCounting: TextView
     // Images
     private lateinit var imageFive: ImageView

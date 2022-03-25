@@ -11,4 +11,9 @@
     <string name="one">1</string>
     <string name="two">2</string>
     <string name="three">3</string>
+    <string name="image1">imgPosicion1</string>
+    <string name="image2">imgPosicion2</string>
+    <string name="image3">imgPosicion3</string>
+    <string name="image4">imgPosicion4</string>
+    <string name="image5">imgPosicion5</string>
 </resources>
